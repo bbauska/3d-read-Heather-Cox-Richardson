@@ -1,13 +1,14 @@
 // Poem text
-const kiplingPoem = `<p>Heather Cox Richardson says, 
+const heatherSays = `<p>Heather Cox Richardson says, 
 The Economist's Middle East correspondent, Greg Carlstrom, noted that Trump appears to be workshopping 
 the causes for his attacks on Iran and his goals for the war by talking to journalists.
 As Midas Touch summarized Carlstrom's argument, he said, "Trump doesn't sound convinced by any of it. 
 He's throwing spaghetti at the wall. Ultimately, I suspect he just wants to say he solved a problem 
 that has vexed every American president since Jimmy Carter, but there's no clear idea what that looks 
 like and no plan for how to get there. And there are plenty of possible scenarios in which Trump declares 
-victory and leaves the region with an absolute mess.
-Matt Girtz of Media Matters noted today that Trump, who watches the Fox News Channel consistently, 
+victory and leaves the region with an absolute mess.</p>`;
+
+/* Matt Girtz of Media Matters noted today that Trump, who watches the Fox News Channel consistently, 
 appears to have shaped his attack on Iran in response to encouragement from FNC hosts. Girtz recalled 
 that for decades, the FNC hosts Trump trusts the most have called for military strikes on Iran. Last 
 June, FNC personalities Shan Hannity, Mark Levan, and Brian Kilme urged Trump to bomb Iran and then 
@@ -106,20 +107,21 @@ afford a home. They want to be able to send their kids to school.
 Letters from an American was written and read by Heather Cox Richardson. It was produced at Soundsscape 
 Productions Dead in Massachusetts. Recorded with music composed by Michael Moss.
 <span>Yours Truly, Heather Cox Richardson</span>.</p>`;
+*/
 
-// Function to insert poem into divs
-function insertPoemIntoDivs() {
+// Function to insert Heather statements into divs
+function insertHeatherIntoDivs() {
   // Get all .text divs
   const textDivs = document.querySelectorAll(".text");
 
-  // Insert poem into all .text divs
+  // Insert Heather statements into all .text divs
   textDivs.forEach((div) => {
-    div.innerHTML = kiplingPoem;
+    div.innerHTML = heatherSays;
   });
 }
 
 // Call the function when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", insertPoemIntoDivs);
+document.addEventListener("DOMContentLoaded", insertHeatherIntoDivs);
 
 const contentDiv = document.querySelector(".content");
 function adjustContentSize() {
