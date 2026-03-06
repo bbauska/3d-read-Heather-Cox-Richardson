@@ -135,7 +135,6 @@ Letters from an American was written and read by Heather Cox Richardson. It was 
 Productions Dead in Massachusetts. Recorded with music composed by Michael Moss.
 <span>Yours Truly, Heather Cox Richardson</span></p>`;
 
-  
 // Function to insert Heather statements into divs
 function insertHeatherIntoDivs() {
   // Get all .text divs
@@ -146,18 +145,6 @@ function insertHeatherIntoDivs() {
     div.innerHTML = heatherSays;
   });
 }
-// Function to insert a 2nd Heather statements into divs
-function insertAnotherHeatherIntoDivs() {
-  // Get all .text divs
-  const textDivs = document.querySelectorAll(".text");
-
-/*
-  // Insert Heather statements into all .text divs
-  textDivs.forEach((div) => {
-    div.innerHTML = heatherSaysNext;
-  });
-}
-*/
 
 // Call the function when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", insertHeatherIntoDivs);
